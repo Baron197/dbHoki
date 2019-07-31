@@ -1,5 +1,3 @@
-CREATE DATABASE  IF NOT EXISTS `hokihokibento` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */;
-USE `hokihokibento`;
 -- MySQL dump 10.13  Distrib 8.0.12, for Win64 (x86_64)
 --
 -- Host: localhost    Database: hokihokibento
@@ -80,7 +78,7 @@ CREATE TABLE `transaction` (
   `totalBayaran` int(11) NOT NULL,
   `namaPembeli` varchar(45) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -89,7 +87,7 @@ CREATE TABLE `transaction` (
 
 LOCK TABLES `transaction` WRITE;
 /*!40000 ALTER TABLE `transaction` DISABLE KEYS */;
-INSERT INTO `transaction` VALUES (1,'2019-03-22 00:00:00',100000,110000,'Baron'),(2,'2019-03-22 00:00:00',395000,400000,'Richard'),(3,'2019-03-22 14:18:21',395000,410000,'Karin'),(4,'2019-03-25 09:52:30',155000,160000,'Sasuga'),(5,'2019-03-25 13:11:18',160000,170000,'Kirito'),(6,'2019-04-11 13:40:00',120000,125000,'Sasuga'),(7,'2019-04-11 13:41:15',220000,230000,'Sasuga'),(8,'2019-04-11 13:47:38',70000,80000,'Sasuga'),(9,'2019-04-11 14:17:46',50000,60000,'Karin');
+INSERT INTO `transaction` VALUES (1,'2019-03-22 00:00:00',100000,110000,'Baron'),(2,'2019-03-22 00:00:00',395000,400000,'Richard'),(3,'2019-03-22 14:18:21',395000,410000,'Karin'),(4,'2019-03-25 09:52:30',155000,160000,'Sasuga'),(5,'2019-03-25 13:11:18',160000,170000,'Kirito');
 /*!40000 ALTER TABLE `transaction` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -107,7 +105,7 @@ CREATE TABLE `transactionitem` (
   `qty` int(11) NOT NULL,
   `transactionId` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -116,7 +114,7 @@ CREATE TABLE `transactionitem` (
 
 LOCK TABLES `transactionitem` WRITE;
 /*!40000 ALTER TABLE `transactionitem` DISABLE KEYS */;
-INSERT INTO `transactionitem` VALUES (1,2,30000,1,1),(2,1,35000,2,1),(3,2,30000,10,2),(4,1,35000,2,2),(5,3,25000,1,2),(6,1,35000,2,3),(7,2,30000,10,3),(8,3,25000,1,3),(9,1,35000,2,4),(10,2,30000,2,4),(11,3,25000,1,4),(12,2,30000,2,5),(13,3,25000,4,5),(14,2,30000,4,6),(15,1,35000,2,7),(16,2,30000,5,7),(17,1,35000,2,8),(18,3,25000,2,9);
+INSERT INTO `transactionitem` VALUES (1,2,30000,1,1),(2,1,35000,2,1),(3,2,30000,10,2),(4,1,35000,2,2),(5,3,25000,1,2),(6,1,35000,2,3),(7,2,30000,10,3),(8,3,25000,1,3),(9,1,35000,2,4),(10,2,30000,2,4),(11,3,25000,1,4),(12,2,30000,2,5),(13,3,25000,4,5);
 /*!40000 ALTER TABLE `transactionitem` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -129,4 +127,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-07-31 10:03:09
+-- Dump completed on 2019-04-11 13:14:03
